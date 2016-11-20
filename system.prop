@@ -185,4 +185,4 @@ ro.allow.mock.location=1
 ro.debuggable=1
 persist.sys.usb.config=mass_storage,adb
 
-ro.sf.hwrotation=180
+persist.panel.mountflip=3
