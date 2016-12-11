@@ -45,20 +45,20 @@
         <item>10</item>
         <item>50</item>
         <item>90</item>
-        <item>100</item>
-        <item>150</item>
-        <item>200</item>
-        <item>300</item>
-        <item>400</item>
-        <item>500</item>
-        <item>800</item>
-        <item>1000</item>
-        <item>1300</item>
-        <item>3000</item>
+        <item>120</item>
+        <item>180</item>
+        <item>240</item>
+        <item>340</item>
+        <item>440</item>
+        <item>600</item>
+        <item>850</item>
+        <item>1250</item>
+        <item>1650</item>
+        <item>2800</item>
         <item>4000</item>
         <item>8000</item>
+        <item>15000</item>
         <item>20000</item>
-        <item>30000</item>
     </integer-array>
 
     <!-- Array of output values for LCD backlight corresponding to the LUX values
@@ -271,10 +271,10 @@
     <bool translatable="false" name="config_wifi_batched_scan_supported">false</bool>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motoxt157x</string>
+    <string name="config_mms_user_agent" translatable="false">motoxt158x</string>
 
     <!-- MMS user agent prolfile url -->
-    <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motoxt157x/Profile/motoxt157x.rdf</string>
+    <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motoxt158x/Profile/motoxt158x.rdf</string>
 
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
@@ -441,8 +441,5 @@
 
     <!-- Does the notification LED support multiple colors? Used to decide if the user can change the colors -->
     <bool name="config_multiColorNotificationLed">false</bool>
-
-    <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
 
 </resources>
