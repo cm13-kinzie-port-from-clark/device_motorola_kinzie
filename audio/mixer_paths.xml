@@ -667,6 +667,10 @@
 		<ctl name="AIF1TX1 Input 1" value="SLIMRX1" />
 		<ctl name="AIF1TX2 Input 1" value="SLIMRX2" />
 	</path>
+	
+	<path name="speaker-reverse">
+		<path name="speaker" />
+	</path>
 
 	<path name="speaker-mic">
 		<path name="mic5" />
