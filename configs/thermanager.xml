@@ -178,7 +178,7 @@
 	</control>
 
 	<control name="cpu-a53">
-		<mitigation level="off"><value resource="cluster-a53">1555200</value></mitigation>
+		<mitigation level="off"><value resource="cluster-a53">4294967295</value></mitigation>
 		<mitigation level="1"><value resource="cluster-a53">1478400</value></mitigation>
 		<mitigation level="2"><value resource="cluster-a53">1344000</value></mitigation>
 		<mitigation level="3"><value resource="cluster-a53">1248000</value></mitigation>
@@ -193,7 +193,7 @@
 	</control>
 
 	<control name="cpu-a57">
-		<mitigation level="off"><value resource="cluster-a57">1948400</value></mitigation>
+		<mitigation level="off"><value resource="cluster-a57">4294967295</value></mitigation>
 		<mitigation level="1"><value resource="cluster-a57">1824000</value></mitigation>
 		<mitigation level="2"><value resource="cluster-a57">1728000</value></mitigation>
 		<mitigation level="3"><value resource="cluster-a57">1632000</value></mitigation>
