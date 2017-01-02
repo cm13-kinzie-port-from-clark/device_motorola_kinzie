@@ -444,9 +444,6 @@
 
     <bool name="config_multiColorNotificationLed">false</bool>
 
-    <!-- Enable blur support -->
-    <bool name="config_ui_blur_enabled">true</bool>
-
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
