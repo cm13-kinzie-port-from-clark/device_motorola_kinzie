@@ -30,6 +30,9 @@
 #include <utils/threads.h>
 #include <gui/SensorManager.h>
 
+#define OPEN_RETRIES    10
+#define OPEN_RETRY_MSEC 40
+
 static android::Mutex gCameraWrapperLock;
 static camera_module_t *gVendorModule = 0;
 
@@ -94,19 +97,16 @@ static int camera_device_open(const hw_module_t *module, const char *name,
     if (name == NULL || check_vendor_module() != android::NO_ERROR) {
         return -EINVAL;
     }
-
-    while (cameraretry < 3) {
+        int retries = OPEN_RETRIES;
+        bool retry;
+        do {
          rv = gVendorModule->common.methods->open(
                  (const hw_module_t*)gVendorModule, name,
                  device);
-         if (!rv)
-             break;
-
-         cameraretry++;
-         ALOGV("%s: open failed - retrying attempt %d",__FUNCTION__, cameraretry);
-         sleep(2);
-    }
-
+            retry = --retries > 0 && rv;
+            if (retry)
+                usleep(OPEN_RETRY_MSEC * 1000);
+        } while (retry);
     if (rv)
         ALOGE("vendor camera open fail");
 
